@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducat Navbar Example using media query</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        #navbar {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #logo img {
+            width: 80px;
+        }
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menuItem {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+
+        #menuItem a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        #menuItem>button {
+            background-color: yellow;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 12px;
+        }
+
+        #exploreProgram {
+            display: none;
+        }
+
+        footer {
+            background-color: rgb(12, 34, 67);
+            color: white;
+            display: flex;
+            padding-top: 3rem;
+            justify-content: center;
+            padding-bottom: 3rem;
+            align-items: center;
+        }
+
+        footer>h4 {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        footer>ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        footer > ul > li {
+            margin-bottom: 0.5rem;
+            /* Adjust spacing between list items */
+        }
+
+        footer > a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .c-copy_right {
+            margin-top: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="exploreProgram">Explore Program</div>
+        <div id="logo">
+            <img src="https://www.ducatindia.com/static/images/logo.png" alt="Ducat Logo">
+        </div>
+        <div id="menuItem">
+            <a href="">Home</a>
+            <a href="">About Us </a>
+            <a href="">Courses</a>
+            <a href="">Online Registration</a>
+            <a href="">Certificate</a>
+            <a href="">Corporate Training</a>
+            <a href="">Placements</a>
+            <a href="">Blogs</a>
+            <button>Contact Us</button>
+        </div>
+
+    </div>
+    <footer class="footer" style="background-color: rgb(12, 34, 67);">
+        <div class="container">
+            <div class="row">
+                <div class="social-media">
+                    <h4>Follow Us!</h4>
+                    <ul class="list-unstyled d-flex social">
+                        <li class="facebook"><a class="link-dark" target="_blank"
+                                href="https://www.facebook.com/ducatEducation"><ion-icon
+                                    name="logo-facebook"></ion-icon></a></li>
+                        <li class="instagram"><a class="link-dark" target="_blank"
+                                href="https://instagram.com/ducateducation"><ion-icon
+                                name="logo-instagram"></ion-icon></a></li>
+                        <li class="youtube"><a class="link-dark" target="_blank"
+                                href="https://youtube.com/@DucatIndiatraining"><ion-icon
+                                name="logo-youtube"></ion-icon></a></li>
+                        <li class="linkedin"><a class="link-dark" target="_blank"
+                                href="https://www.linkedin.com/companyducateducation"><ion-icon
+                                name="logo-linkedin"></ion-icon></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" popular-courses">
+                    <h4>Our Popular Courses</h4>
+                    <div class="row-1">
+                        <div class="courses">
+                            <ul class="nav">
+                                <li><a class="nav-link" href="#">Java FullStack</a></li>
+                                <li><a class="nav-link" href="#">Python Full Stack</a></li>
+                                <li><a class="nav-link" href="#">.Net Full Stack</a></li>
+                                <li><a class="nav-link" href="#">Mern Stack</a></li>
+                                <li><a class="nav-link" href="#">Mean Stack</a></li>
+                                <li><a class="nav-link" href="#">PHP Full Stack</a></li>
+                            </ul>
+                        </div>
+                        <div class="UI-UX course">
+                            <ul class="nav">
+                                <li><a class="nav-link" href="#">UI/UX Course</a></li>
+                                <li><a class="nav-link" href="#">Data Analytics Using Python</a></li>
+                                <li><a class="nav-link" href="#">Cyber Security</a></li>
+                                <li><a class="nav-link" href="#">Ethical Hacking</a></li>
+                                <li><a class="nav-link" href="#">Aws</a></li>
+                                <li><a class="nav-link" href="#">Cloud Computing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" others">
+                    <h4>Other Top Courses</h4>
+                    <div class="row">
+                        <div class="top">
+                            <ul class="nav">
+                                <a class="nav-link" href="#">SAP Hana Fico</a>
+                                <a class="nav-link" href="#">Salesforce</a>
+                                <a class="nav-link" href="#">CCNA</a>
+                                <a class="nav-link" href="#">AutoCAD</a>
+                                <a class="nav-link" href="#">Graphic Designing</a>
+                                <a class="nav-link" href="#">Multimedia &amp; Animation</a>
+                            </ul>
+                        </div>
+                        <div class="testing">
+                            <ul class="nav">
+                                <a class="nav-link" href="#">Manual + Selenium Testing</a>
+                                <a class="nav-link" href="#">Full Stack QA</a>
+                                <a class="nav-link" href="#">React Native</a>
+                                <a class="nav-link" href="#">React</a>
+                                <a class="nav-link" href="#">Angular</a>
+                                <a class="nav-link" href="#">Devops</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" policies">
+                    <h4>Policies</h4>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refund Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-copy_right">
+                <p>copyright © 2024 Ducat India, All rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
