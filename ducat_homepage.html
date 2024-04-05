@@ -8,108 +8,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-size: 14px;
-        }
-
-        #navbar {
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        #logo img {
-            width: 80px;
-        }
-
-        #logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #menuItem {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 70%;
-        }
-
-        #menuItem a {
-            text-decoration: none;
-            color: grey;
-        }
-
-        #menuItem>button {
-            background-color: yellow;
-            border: none;
-            padding: 8px 10px;
-            border-radius: 12px;
-        }
-
-        #exploreProgram {
-            display: none;
-        }
-
-        .slideshow-container{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .slideshow-container > img{
-          width: 50%;
-        }
-
-        footer {
-            background-color: rgb(12, 34, 67);
-            color: white;
-            display: flex;
-            padding-top: 3rem;
-            justify-content: center;
-            padding-bottom: 3rem;
-            align-items: center;
-        }
-
-        footer>h4 {
-            color: white;
-            font-size: 18px;
-            margin-bottom: 1rem;
-        }
-
-        footer>ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        footer > ul > li {
-            margin-bottom: 0.5rem;
-        }
-
-        footer > a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .row{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        .c-copy_right {
-            margin-top: 2rem;
-        }
-    </style>
-
+    <link rel="stylesheet" href="homepage.css">
 </head>
 
 <body>
@@ -129,13 +28,153 @@
             <a href="">Placements</a>
             <a href="">Blogs</a>
             <button>Contact Us</button>
-        </div> 
+        </div>
 
     </div>
-    <div class="slideshow-container">
-      <img src="Imagees/pic1.webp" alt="pic1">
+    <div class="slider-container">
+        <div class="slide-image">
+            <div class="image-container">
+                <img src="Imagees/pic1.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic2.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic3.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic4.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic5.webp" alt="pic1">
+            </div>
+        </div>
     </div>
-    <footer class="footer" style="background-color: rgb(12, 34, 67);">
+    <div class="box">
+        <div class="text-line">
+            <p style="font-family:fantasy;">Explore Top Programs</p>
+            <a href="#">View all</a>
+        </div>
+        <br>
+        <div class="grid-container">
+            <div class="card">
+                <img src="Imagees/MIS.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">MIS</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/NET.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">.NET</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/DIGI.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">DIGITAL MARKETING</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/JAVA.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">JAVA EXPERT</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/FULL.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">.NET FULL STACK</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/WEB.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">WEB DESIGNING</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/UI.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">UI & UX</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/MEAN.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">MEAN STACK</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagees/DATA.webp" alt="Image">
+                <div class="text">
+                    <p style="font-family:fantasy;">DATA ANALYTICS WITH PYTHON</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="learners">
+        <div class="top-heading">
+            <h1 style="font-size: 30px; font-family:fantasy;">Our Learners Work At</h1>
+            <br>
+            <p style="font-size: 23px; font-family:fantasy;"">Ducat learners work at some of the leading and innovative organizations of today, solving core business problems.</p>
+            <div class=" slideshow-container">
+            <div class="mySlides fade">
+                <img src="Imagees/slide 1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Imagees/slide 2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Imagees/slide 3.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    </div>
+
+    <div class="partners">
+        <div class="top-heading">
+            <h1 style="font-size: 30px; font-family:fantasy;">Our Placement Partners</h1>
+            <br>
+            <div class=" slideshow-container">
+                <div class="mySlides fade">
+                    <img src="Imagees/slide 1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Imagees/slide 2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Imagees/slide 3.png" style="width:100%">
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" footer" style="background-color: rgb(12, 34, 67);">
         <div class="container">
             <div class="row">
                 <div class="social-media">
@@ -146,13 +185,13 @@
                                     name="logo-facebook"></ion-icon></a></li>
                         <li class="instagram"><a class="link-dark" target="_blank"
                                 href="https://instagram.com/ducateducation"><ion-icon
-                                name="logo-instagram"></ion-icon></a></li>
+                                    name="logo-instagram"></ion-icon></a></li>
                         <li class="youtube"><a class="link-dark" target="_blank"
                                 href="https://youtube.com/@DucatIndiatraining"><ion-icon
-                                name="logo-youtube"></ion-icon></a></li>
+                                    name="logo-youtube"></ion-icon></a></li>
                         <li class="linkedin"><a class="link-dark" target="_blank"
                                 href="https://www.linkedin.com/companyducateducation"><ion-icon
-                                name="logo-linkedin"></ion-icon></i></a>
+                                    name="logo-linkedin"></ion-icon></i></a>
                         </li>
                     </ul>
                 </div>
@@ -222,13 +261,32 @@
                 </div>
             </div>
             <div class="c-copy_right">
-                <p>copyright © 2024 Ducat India, All rights Reserved</p>
+                <p style="font-family:fantasy;">copyright © 2024 Ducat India, All rights Reserved</p>
             </div>
         </div>
     </footer>
 
 </body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
 
 </html>
-
-

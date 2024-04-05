@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .slider-container {
+            overflow: hidden;
+            height: 800px;
+            width: 1200px;
+            margin-left: 360px;
+            margin-top: 20x;
+        }
+
+        @-webkit-keyframes slide_animation{
+            0%   { left: 0px}
+            10%   { left: 0px}
+            20%   { left: 1200px}
+            30%   { left: 1200px}
+            40%   { left: 2400px}
+            50%   { left: 2400px}
+            60%   { left: 1200px}
+            70%   { left: 1200px}
+            80%   { left: 0px}
+            90%   { left: 0px}
+            100%  { left: 0px}
+        }
+
+        .slide-image{
+            width: 6000px;
+            height: 800px;
+            margin: 0 0 0 -2400px;
+            position: relative;
+            -webkit-animation-name: slide-animation;
+            -webkit-animation-duration: 33s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+
+        .image-container{
+            height: 800px;
+            width: 1200px;
+            position: relative;
+            float: left;
+        }
+</style>    
+<body>
+    <div class="slider-container">
+        <div class="slide-image">
+            <div class="image-container">
+                <img src="Imagees/pic1.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic2.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic3.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic4.webp" alt="pic1">
+            </div>
+            <div class="image-container">
+                <img src="Imagees/pic5.webp" alt="pic1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
