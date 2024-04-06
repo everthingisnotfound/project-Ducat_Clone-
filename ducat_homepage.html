@@ -147,6 +147,11 @@
             border-radius: 12px;
         }
 
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
         .slider-container {
             overflow: hidden;
@@ -226,7 +231,7 @@
             color: white;
             display: flex;
             padding-top: 3rem;
-            justify-content: center;
+            justify-content: space-evenly;
             padding-bottom: 3rem;
             align-items: center;
         }
@@ -253,7 +258,7 @@
         }
 
         .box {
-            margin: 0px 0px 100px 80px;
+            margin: 50px 0px 100px 80px;
 
         }
 
@@ -332,13 +337,175 @@
         .learners {
             margin: 100px 300px;
         }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 70px;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .display {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+
+        }
+
+        .media,
+        .media-fluid,
+        .media-lg,
+        .media-md,
+        .media-sm,
+        .media-xl {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .box1 {
+            display: flex;
+            align-items: center;
+            column-gap: 50px;
+        }
+
+        @media only screen and (min-width: 991px) {
+            .box1 p {
+                font-size: 14px;
+                width: 51%;
+            }
+        }
+
+        .box1 p {
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        @media only screen and (min-width: 991px) {
+            .media-fluid .form {
+                padding: 10px 20px;
+            }
+        }
+
+        .h-100 {
+            height: 100% !important;
+        }
+
+        .form-box {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .form .col-md-2 {
+            padding: 30px 5px;
+        }
+
+        .form-group {
+            margin-bottom: 0 !important;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .contact-details,
+        .fields,
+        .form {
+            display: flex;
+        }
+
+        .form {
+            justify-content: center;
+        }
+
+        .form input {
+            font-size: 14px !important;
+        }
+
+        .form-control {
+            border-radius: 10px !important;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        button,
+        input {
+            overflow: visible;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .submit_bt:hover {
+            cursor: pointer;
+        }
+
+        .btn {
+            background: #fc0;
+            border: 0 solid;
+            color: #000;
+            width: 120px;
+            font-weight: 600;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            /* Transparent background */
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 12px;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div id="navbar">
+    <div id="navbar" style="background-color: white;">
         <div id="logo">
             <img src="https://www.ducatindia.com/static/images/logo.png" alt="Ducat Logo">
         </div>
@@ -353,7 +520,129 @@
             <a href="">Blogs</a>
             <button>Contact Us</button>
         </div>
+    </div>
+    <div class="container" style="background-color: rgb(44, 114, 213);">
+        <div class="media" style="overflow-x: hidden;">
+            <div class="display" style="max-width: 100%;">
+                <div class="box1">
+                    <img src="Imagees/essential.webp" alt="Learn the essential skills" width="50" height="50">
+                    <p>Learn the Essential Skills</p>
+                </div>
+                <div class="box1">
+                    <img src="Imagees/certificate.webp" alt="Learn the essential skills" width="50" height="50">
+                    <p>Earn Certificate and Degrees</p>
+                </div>
+                <div class="box1">
+                    <img src="Imagees/career.webp" alt="Learn the essential skills" width="50" height="50">
+                    <p>Learn the Essential Skills</p>
+                </div>
+                <div class="box1">
+                    <img src="Imagees/master.webp" alt="Learn the essential skills" width="50" height="50">
+                    <p>Master at Different Areas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-container" style="background-color: rgb(40, 89, 153);">
+        <div class="media-fluid">
+            <div class="form-box">
+                <div class="form h-100">
+                    <div class="contact-details">
+                        <div class="fields">
+                            <div class="col-md-2 form-group "><input class="form-control" placeholder="Full Name"
+                                    type="text" value="" name="name"></div>
+                            <div class="col-md-2 form-group "><input class="form-control" placeholder="Email Address"
+                                    type="email" value="" name="email"></div>
+                            <div class="col-md-2 form-group "><input class="form-control" placeholder="Phone Number"
+                                    type="text" value="" name="phone"></div>
+                            <div class="col-md-2 form-group "><select name="course" class="form-control">
+                                    <option disabled="" value="">Select a Course</option>
+                                    <option>CATIA</option>
+                                    <option>Flutter</option>
+                                    <option>Photography</option>
+                                    <option>Cloud </option>
+                                    <option>Photography</option>
+                                    <option>PMP</option>
+                                    <option>videography</option>
+                                    <option>VFX</option>
+                                    <option>SOLIDWORKS</option>
+                                    <option>Service Now</option>
+                                    <option>Motion Graphics</option>
+                                    <option>business analytics</option>
+                                    <option>data analytics</option>
+                                    <option>Multimedia &amp; Animation</option>
+                                    <option>Java</option>
+                                    <option>Python</option>
+                                    <option>Data Science</option>
+                                    <option>Machine Learning</option>
+                                    <option>AWS</option>
+                                    <option>Azure</option>
+                                    <option>Salesforce</option>
+                                    <option>Hadoop</option>
+                                    <option>Linux</option>
+                                    <option>C</option>
+                                    <option>Advanced Excel </option>
+                                    <option>Salesforce Admin</option>
+                                    <option>Salesforce Admin development</option>
+                                    <option>C++</option>
+                                    <option>S4 Hana Fico</option>
+                                    <option>Android</option>
+                                    <option>S4 Hana Mm</option>
+                                    <option>IOT</option>
+                                    <option>S4 Hana Hcm</option>
+                                    <option>Devops</option>
+                                    <option>IOS</option>
+                                    <option>S4 Hana Sd</option>
+                                    <option>SAP</option>
+                                    <option>Oracle</option>
+                                    <option>UI &amp; UX Design</option>
+                                    <option>Data science with R</option>
+                                    <option>Power BI</option>
+                                    <option>Tableau</option>
+                                    <option>Cyber Security</option>
+                                    <option>Ms SQL</option>
+                                    <option>SQL</option>
+                                    <option>MIS</option>
+                                    <option>AutoCAD</option>
+                                    <option>Embedded system</option>
+                                    <option>PLC Scada</option>
+                                    <option>PHP</option>
+                                    <option>Web DESIGNING</option>
+                                    <option>UI</option>
+                                    <option>React</option>
+                                    <option>MERN</option>
+                                    <option>Angular</option>
+                                    <option>Mean</option>
+                                    <option>Graphic Designing</option>
+                                    <option>.Net</option>
+                                    <option>Testing</option>
+                                    <option>CCNA</option>
+                                    <option>CCNP</option>
+                                    <option>MCSA</option>
+                                    <option>Digital Marketing</option>
+                                    <option>Ethical Hacking</option>
+                                    <option>German Language</option>
+                                    <option>Other</option>
+                                </select></div>
+                            <div class="col-md-2 form-group "><select name="center" class="form-control">
+                                    <option disabled="" value="">Select a Branch</option>
+                                    <option>Noida Sector 16</option>
+                                    <option>Sector 63, Noida</option>
+                                    <option>Pitampura</option>
+                                    <option>South Ex.</option>
+                                    <option>Ghaziabad</option>
+                                    <option>Gurugram</option>
+                                </select></div>
+                            <div class="col-md-2 form-group"><input class="btn btn-primary submit_bt  py-2 px-5"
+                                    type="submit" value="Submit"><span class="submitting"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+
+        </div>
     </div>
     <div class="box">
         <div class="text-line">
@@ -478,6 +767,54 @@
             </div>
         </div>
     </div>
+    <div class="row hundreds_happ" style="background-color: rgb(246, 246, 246);">
+        <div class="container py-5">
+            <div class="col-md-12 post-outer">
+                <div class="post-content">
+                    <div class="post-content-first">
+                        <h2 class="text-left pop1 py-2 h23 our-h2" style="font-weight: 600;">Hundreds of Happy Students</h2>
+                        <p>Several of them were asked how satisfied they are from our courses. Here are the statements</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="content-in">
+                        <div class="post-news">
+                            <img alt="Rakesh Rana" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="hetchs1" style="color: transparent;" srcset="/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1676871719216rakesh%20rana.jpg&amp;w=96&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1676871719216rakesh%20rana.jpg&amp;w=256&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1676871719216rakesh%20rana.jpg&amp;w=256&amp;q=75">
+                            <p>Rakesh Rana</p>
+                            <i class="fa" aria-hidden="true">
+                                <svg width="81" height="86" viewBox="0 0 81 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40.5" cy="40.5" r="40.5" fill="#FFCC00"></circle>
+                                    <path d="M19.19 58.16C20.5767 56.1667 22.0933 53.87 23.74 51.27C25.3867 48.5833 26.73 45.5067 27.77 42.04C25.2567 41.6067 23.22 40.6967 21.66 39.31C20.1 37.9233 19.32 35.9733 19.32 33.46C19.32 30.5133 20.1867 28.1733 21.92 26.44C23.6533 24.7067 25.9067 23.84 28.68 23.84C31.4533 23.84 33.6633 24.8367 35.31 26.83C36.9567 28.7367 37.78 30.9467 37.78 33.46C37.78 35.8 37.3033 38.27 36.35 40.87C35.3967 43.47 34.2267 46.0267 32.84 48.54C31.4533 51.0533 29.8933 53.4367 28.16 55.69C26.5133 57.9433 24.9967 59.9367 23.61 61.67L19.19 58.16ZM45.32 58.16C46.7067 56.1667 48.2233 53.87 49.87 51.27C51.5167 48.5833 52.86 45.5067 53.9 42.04C51.3867 41.6067 49.35 40.6967 47.79 39.31C46.23 37.9233 45.45 35.9733 45.45 33.46C45.45 30.5133 46.3167 28.1733 48.05 26.44C49.7833 24.7067 52.0367 23.84 54.81 23.84C57.5833 23.84 59.7933 24.8367 61.44 26.83C63.0867 28.7367 63.91 30.9467 63.91 33.46C63.91 35.8 63.4333 38.27 62.48 40.87C61.5267 43.47 60.3567 46.0267 58.97 48.54C57.5833 51.0533 56.0233 53.4367 54.29 55.69C52.6433 57.9433 51.1267 59.9367 49.74 61.67L45.32 58.16ZM55.98 33.46C55.98 29.84 57.5133 26.93 60.58 24.73C63.6467 22.43 67.0267 21.28 70.72 21.28C74.4133 21.28 77.7933 22.43 80.86 24.73C83.9267 26.93 85.46 29.84 85.46 33.46C85.46 37.08 83.9267 40 80.86 42.22C77.7933 44.42 74.4133 45.52 70.72 45.52C67.0267 45.52 63.6467 44.42 60.58 42.22C57.5133 40 55.98 37.08 55.98 33.46Z" fill="black"></path>
+                                </svg>
+                            </i>
+                            <p class="pt-2 pb-4">I have attended Angular Training with DUCAT. It was a very good learning experience and full of hands-on. Trainers are very good and co-operative.</p>
+                        </div>
+                        <div class="post-news">
+                            <img alt="Mohit Garg" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="hetchs1" style="color: transparent;" srcset="/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1676872100152mohit%20garg.jpg&amp;w=96&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1676872100152mohit%20garg.jpg&amp;w=256&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fadmin.ducatindia.com%2Ftestimonial%2F1676872100152mohit%20garg.jpg&amp;w=256&amp;q=75">
+                            <p>Mohit Garg</p>
+                            <i class="fa" aria-hidden="true">
+                                <svg width="81" height="86" viewBox="0 0 81 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40.5" cy="40.5" r="40.5" fill="#FFCC00"></circle>
+                                    <path d="M19.19 58.16C20.5767 56.1667 22.0933 53.87 23.74 51.27C25.3867 48.5833 26.73 45.5067 27.77 42.04C25.2567 41.6067 23.22 40.6967 21.66 39.31C20.1 37.9233 19.32 35.9733 19.32 33.46C19.32 30.5133 20.1867 28.1733 21.92 26.44C23.6533 24.7067 25.9067 23.84 28.68 23.84C31.4533 23.84 33.6633 24.8367 35.31 26.83C36.9567 28.7367 37.78 30.9467 37.78 33.46C37.78 35.8 37.3033 38.27 36.35 40.87C35.3967 43.47 34.2267 46.0267 32.84 48.54C31.4533 51.0533 29.8933 53.4367 28.16 55.69C26.5133 57.9433 24.9967 59.9367 23.61 61.67L19.19 58.16ZM45.32 58.16C46.7067 56.1667 48.2233 53.87 49.87 51.27C51.5167 48.5833 52.86 45.5067 53.9 42.04C51.3867 41.6067 49.35 40.6967 47.79 39.31C46.23 37.9233 45.45 35.9733 45.45 33.46C45.45 30.5133 46.3167 28.1733 48.05 26.44C49.7833 24.7067 52.0367 23.84 54.81 23.84C57.5833 23.84 59.7933 24.8367 61.44 26.83C63.0867 28.7367 63.91 30.9467 63.91 33.46C63.91 35.8 63.4333 38.27 62.48 40.87C61.5267 43.47 60.3567 46.0267 58.97 48.54C57.5833 51.0533 56.0233 53.4367 54.29 55.69C52.6433 57.9433 51.1267 59.9367 49.74 61.67L45.32 58.16ZM55.98 33.46C55.98 29.84 57.5133 26.93 60.58 24.73C63.6467 22.43 67.0267 21.28 70.72 21.28C74.4133 21.28 77.7933 22.43 80.86 24.73C83.9267 26.93 85.46 29.84 85.46 33.46C85.46 37.08 83.9267 40 80.86 42.22C77.7933 44.42 74.4133 45.52 70.72 45.52C67.0267 45.52 63.6467 44.42 60.58 42.22C57.5133 40 55.98 37.08 55.98 33.46Z" fill="black"></path>
+                                </svg>
+                            </i>
+                            <p class="pt-2 pb-4">I did AWS Training at Ducat Noida. I'm very much satisfied with the quality of training provided by them. A really very good experience with Ducat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="text-center">
+                    <div class="py-5">
+                        <h1>Testimonials</h1>
+                        <div class="text-primary">What Our Students Says ?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class=" footer" style="background-color: rgb(12, 34, 67);">
         <div class="container">
@@ -530,22 +867,22 @@
                     <div class="row">
                         <div class="top">
                             <ul class="nav">
-                                <a class="nav-link" href="#">SAP Hana Fico</a>
-                                <a class="nav-link" href="#">Salesforce</a>
-                                <a class="nav-link" href="#">CCNA</a>
-                                <a class="nav-link" href="#">AutoCAD</a>
-                                <a class="nav-link" href="#">Graphic Designing</a>
-                                <a class="nav-link" href="#">Multimedia &amp; Animation</a>
+                                <li><a class="nav-link" href="#">SAP Hana Fico</a></li>
+                                <li><a class="nav-link" href="#">Salesforce</a></li>
+                                <li><a class="nav-link" href="#">CCNA</a></li>
+                                <li><a class="nav-link" href="#">AutoCAD</a></li>
+                                <li><a class="nav-link" href="#">Graphic Designing</a></li>
+                                <li><a class="nav-link" href="#">Multimedia &amp; Animation</a></li>
                             </ul>
                         </div>
                         <div class="testing">
                             <ul class="nav">
-                                <a class="nav-link" href="#">Manual + Selenium Testing</a>
-                                <a class="nav-link" href="#">Full Stack QA</a>
-                                <a class="nav-link" href="#">React Native</a>
-                                <a class="nav-link" href="#">React</a>
-                                <a class="nav-link" href="#">Angular</a>
-                                <a class="nav-link" href="#">Devops</a>
+                                <li><a class="nav-link" href="#">Manual + Selenium Testing</a></li>
+                                <li><a class="nav-link" href="#">Full Stack QA</a></li>
+                                <li><a class="nav-link" href="#">React Native</a></li>
+                                <li><a class="nav-link" href="#">React</a></li>
+                                <li><a class="nav-link" href="#">Angular</a></li>
+                                <li><a class="nav-link" href="#">Devops</a></li>
                             </ul>
                         </div>
                     </div>
@@ -573,6 +910,20 @@
 
 </body>
 <script>
+
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
     let slideIndex = 0;
     showSlides();
 
