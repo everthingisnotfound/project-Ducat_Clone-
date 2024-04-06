@@ -17,12 +17,6 @@
             box-sizing: border-box;
         }
 
-        *,
-        ::after,
-        ::before {
-            box-sizing: border-box;
-        }
-
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -153,9 +147,6 @@
             border-radius: 12px;
         }
 
-        #exploreProgram {
-            display: none;
-        }
 
         .slider-container {
             overflow: hidden;
@@ -348,7 +339,6 @@
 <body>
 
     <div id="navbar">
-        <div id="exploreProgram">Explore Program</div>
         <div id="logo">
             <img src="https://www.ducatindia.com/static/images/logo.png" alt="Ducat Logo">
         </div>
@@ -589,6 +579,9 @@
     function showSlides() {
         let i;
         let slides = document.getElementsByClassName("mySlides");
+
+        // this line of code is used to call the class from abov html code
+
         let dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
